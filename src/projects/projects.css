@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #2b1d41;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    background-color: #2b1d41;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-container .links {
+    display: flex;
+}
+
+.nav-container .links a {
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover {
+    color: white;
+}
+
+/* Projects Section */
+.projects-container {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.projects-container h1 {
+    font-size: 2.5rem;
+    color: #58ccf0;
+    margin-bottom: 40px;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Individual Project */
+.project {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px white;
+}
+
+/* Project Image */
+.project-image {
+    width: 100%;
+    height: 250px; /* Ensures consistent image height */
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Project Titles */
+.project h2 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #58ccf0;
+}
+
+/* Project Description */
+.project p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* GitHub Icon at Bottom */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.github-link {
+    margin-top: 30px;
+}
+
+.github-link a {
+    color: white;
+    font-size: 3rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.github-link a:hover {
+    transform: scale(1.2);
+    color: #58ccf0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

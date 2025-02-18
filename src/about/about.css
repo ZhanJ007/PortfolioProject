@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #2b1d41;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: white;
+    text-shadow: 0 0 10px #0d0e0d;
+}
+
+/* Navigation Links */
+.nav-container .links {
+    display: flex;
+}
+
+.nav-container .links a {
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #040f08;
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before {
+    width: 100%;
+}
+
+.nav-container .links a:hover {
+    color: white;
+}
+
+/* About Page Layout */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    height: auto;
+}
+
+/* Image Gallery - Full Left Side */
+.image-gallery {
+    width: 50%;
+    height: 100vh; /* Full height of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make Single Image Fill Left Side */
+.image-gallery img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover; /* Ensure full coverage */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.image-gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* About Content - Right Side */
+.about-content {
+    width: 45%;
+    color: white;
+}
+
+/* Text Styling */
+.about-content h1 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    margin-bottom: 15px;
+    color:  #58ccf0;
+}
+
+.about-content p {
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 884px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-gallery {
+        width: 100%;
+        height: 90vh; /* Reduce height on smaller screens */
+    }
+
+    .about-content {
+        width: 90%;
+    }
+}
