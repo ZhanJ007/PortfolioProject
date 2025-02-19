@@ -14,7 +14,6 @@ body {
     background-color: #2b1d41;
 }
 
-/* Navbar */
 nav {
     width: 100%;
     height: 10vh;
@@ -40,7 +39,6 @@ nav {
     text-shadow: 0 0 10px #0d0e0d;
 }
 
-/* Navigation Links */
 .nav-container .links {
     display: flex;
 }
@@ -95,7 +93,7 @@ nav {
     height: fit-content;
 }
 
-/* Apply hover animation to all images */
+/* Hover Animation */
 img {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -105,12 +103,10 @@ img:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-/* Hover Animation for Profile Image */
 .main-container .image:hover {
     animation: animate 1.5s ease-in-out infinite;
 }
 
-/* Keyframes Animation */
 @keyframes animate {
     0% {
         scale: 1;
@@ -123,7 +119,6 @@ img:hover {
     }
 }
 
-/* Home Content */
 .main-container .content {
     color: white;
     width: 40%;
