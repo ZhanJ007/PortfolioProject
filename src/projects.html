@@ -1,78 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects by James Zhan - Showcasing software and machine learning projects">
-    <meta name="author" content="James Zhan">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="/styles/projects.css">
-    <title>Projects - James Zhan</title>
-</head>
-<body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">James <span>Zhan</span></div>
-            <div class="links">
-                <a href="/index.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
-                <a href="/src/about.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">About</a>
-                <a href="/src/experience.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Experience</a>
-                <a href="/src/projects.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Projects</a>
+<section class="projects-container">
+    <h1 data-aos="fade-up" data-aos-duration="1500">My Projects</h1>
+
+    <div class="projects-grid">
+
+        <!-- ChAIss -->
+        <div class="project" data-aos="fade-up" data-aos-duration="1500">
+            <div class="project-image">
+                <img src="/images/ChAIss.png" alt="Project 1">
             </div>
-        </div>
-    </nav>
+            <h2>ChAIss App</h2>
+            <p>
+                Developed a full-featured Android chess app using Java and Android Studio, tailored for players of all skill levels.
+                Integrated machine learning and the Stockfish engine to suggest optimal moves, evaluate positions, and support bot gameplay.
+                Designed the UI from scratch with Figma and Lucidchart, featuring drag-and-drop, click-to-move, legal move highlighting,
+                and real-world 3D-to-2D game translation. Conducted JUnit testing to ensure reliable performance and smooth user interaction.
+            </p>
 
-    <section class="projects-container">
-        <h1 data-aos="fade-up" data-aos-duration="1500">My Projects</h1>
-
-        <div class="projects-grid">
-            <!-- Machine Learning -->
-            <div class="project" data-aos="fade-up" data-aos-duration="1500">
-                <div class="project-image">
-                    <img src="/images/weather.png" alt="Project 1">
-                </div>
-                <h2>Weather Forecasting AI</h2>
-                <p>Developed a deep learning model using YOLO and Keras to create a classification and prediction model for weather purposes. Curated personal dataset for weather images and analyzed how the model learns and develops.</p>
-            </div>
-
-            <!-- ChAIss -->
-            <div class="project" data-aos="fade-up" data-aos-duration="1500">
-                <div class="project-image">
-                    <img src="/images/ChAIss.png" alt="Project 2">
-                </div>
-                <h2>ChAIss App</h2>
-                <p>Developed a full-featured Android chess app using Java and Android Studio, tailored for players of all skill levels. Integrated machine learning and the Stockfish engine to suggest optimal moves, evaluate positions, and support bot gameplay. Designed the UI from scratch with Figma and Lucidchart, featuring drag-and-drop, click-to-move, legal move highlighting, and real-world 3D-to-2D game translation. Conducted JUnit testing to ensure reliable performance and smooth user interaction.</p>
-                <a class="github-btn" href="https://github.com/SCCapstone/TheDinosaurs" target="_blank">
+            <a class="github-btn" href="https://github.com/SCCapstone/TheDinosaurs" target="_blank">
                 <i class="fab fa-github"></i> View on GitHub
-                </a>
-            </div>
-
-            <!-- Portfolio -->
-            <div class="project" data-aos="fade-up" data-aos-duration="1500">
-                <div class="project-image">
-                    <img src="/images/portfolio.png" alt="Project 3">
-                </div>
-            <h2>Portfolio Website</h2>
-            <p>A dynamic portfolio website built using JavaScript, CSS, and HTML. This website showcases my ability to create a unique, interactive, and visually appealing user experience.</p>
-            <a class="github-btn" href="https://github.com/ZhanJ007/PortfolioProject" target="_blank">
-            <i class="fab fa-github"></i> View on GitHub
-        </a>
-        </div>
-        </section>
-
-    <!-- Github Hyperlink -->
-    <footer>
-        <div class="github-link" data-aos="fade-up" data-aos-duration="1500">
-            <a href="https://github.com/ZhanJ007" target="_blank">
-                <i class="fab fa-github"></i>
             </a>
         </div>
-    </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({ offset: 0 });
-    </script>
-</body>
-</html>
+        <!-- Portfolio -->
+        <div class="project" data-aos="fade-up" data-aos-duration="1500">
+            <div class="project-image">
+                <img src="/images/portfolio.png" alt="Project 2">
+            </div>
+
+            <h2>Portfolio Website</h2>
+
+            <p>
+                A dynamic portfolio website built using JavaScript, CSS, and HTML.
+                This website showcases my ability to create a unique, interactive,
+                and visually appealing user experience.
+            </p>
+
+            <a class="github-btn" href="https://github.com/ZhanJ007/PortfolioProject" target="_blank">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+
+    </div>
+</section>
